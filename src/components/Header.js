@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cdlogo from '../images/cdlogo-white.png'
+//import cdlogo from '../images/cdlogo-white.png'
 
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <img className="logo" src={cdlogo} alt="" />
+            <span className="icon fa-diamond"></span>
+            {/**<img className="logo" src={cdlogo} alt="" />**/}
         </div>
         <div className="content">
             <div className="inner">

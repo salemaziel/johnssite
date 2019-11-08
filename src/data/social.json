@@ -1,0 +1,27 @@
+{
+  "links": [
+    {
+      "title": "Facebook",
+      "icon": "fa-facebook",
+      "url": "https://facebook.com"
+    },
+    {
+      "type": "twitter",
+      "title": "Twitter",
+      "icon": "fa-twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "type": "instagram",
+      "title": "Instagram",
+      "icon": "fa-instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "type": "linkedin",
+      "title": "LinkedIn",
+      "icon": "fa-linkedin",
+      "url": "https://www.linkedin.com/"
+    }
+  ]
+}

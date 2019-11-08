@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/src/assets`,
         name: `assets`,
       },
     },
@@ -32,6 +32,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-sass',
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -45,20 +46,27 @@ module.exports = {
           },
         ],
       },
-    },
+    },    
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `@stackbit/gatsby-plugin-menus`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+          sourceUrlPath: `fields.url`,
+          pageContextProperty: `menus`,
+          menus: require('./src/data/menus.json'),
+      },
+  },  
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: 'gatsby-starter-default',
+      short_name: 'starter',
+      start_url: '/',
+      background_color: '#663399',
+      theme_color: '#663399',
+      display: 'minimal-ui',
+      icon: './src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+  'gatsby-plugin-offline',
   ],
-}
+};
