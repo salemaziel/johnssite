@@ -17,8 +17,6 @@ metadata:
     large:
 stackbit_banner:
   show_banner: false
-
-
 sourceMapping:
   - source:
       fieldPath: author.name
